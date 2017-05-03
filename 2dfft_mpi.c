@@ -84,8 +84,8 @@ for (i = 0; i < m; i++) {
 	}
 }
     
-/*for (int p=0; p<size; p++) {
-if (rank == p) {
+/*for (k=0; k<size; k++) {
+if (rank == k) {
 	printf("Local process on rank %d is:\n", rank);
 	for (i = 0; i < m; i++) {
       	for(j = 0; j < N; j++) {
@@ -116,8 +116,8 @@ for (i = 0; i < m; i++) {
 	}
 }
 
-/*for (int p=0; p<size; p++) {
-if (rank == p) {
+/*for (k=0; k<size; k++) {
+if (rank == k) {
 	printf("Local process on rank %d is:\n", rank);
 	for (i = 0; i < m; i++) {
       	for(j = 0; j < N; j++) {
@@ -154,8 +154,8 @@ for (i = 0; i < m; i++) {
 	}
 }
 
-/*for (int p=0; p<size; p++) {
-if (rank == p) {
+/*for (k=0; k<size; k++) {
+if (rank == k) {
 	printf("Local process on rank %d is:\n", rank);
 	for (i = 0; i < m; i++) {
       	for(j = 0; j < N; j++) {
@@ -196,8 +196,8 @@ for (i = 0; i < m; i++) {
 }
 
 /*MPI_Barrier(MPI_COMM_WORLD);
-for (int p=0; p<size; p++) {
-	if (rank == p) {
+for (k=0; k<size; k++) {
+	if (rank == k) {
 		printf("Local process on rank %d is:\n", rank); */    /* little bug in printf: not in order */
 /*			for (i = 0; i < m; i++) {
       			for(j = 0; j < N; j++) {
@@ -247,8 +247,8 @@ for (k = 0; k < size; k++) {       // Loop all the blocks in each processor. blo
 }
 
 MPI_Barrier(MPI_COMM_WORLD);
-for (int p=0; p<size; p++) {
-	if (rank == p) {
+for (k=0; k<size; k++) {
+	if (rank == k) {
 		printf("Local process on rank %d is:\n", rank);     /* little bug in printf: not in order */
 			for (i = 0; i < m; i++) {
       			for(j = 0; j < N; j++) {
